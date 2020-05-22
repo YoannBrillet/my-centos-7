@@ -1,0 +1,34 @@
+# /etc/yum.repos.d/elrepo.repo
+
+[elrepo]
+name=ELRepo.org Community Enterprise Linux Repository - el7
+baseurl=http://elrepo.org/linux/elrepo/el7/$basearch/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-elrepo.org
+protect=0
+
+[elrepo-testing]
+name=ELRepo.org Community Enterprise Linux Testing Repository - el7
+baseurl=http://elrepo.org/linux/testing/el7/$basearch/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-elrepo.org
+protect=0
+
+[elrepo-kernel]
+name=ELRepo.org Community Enterprise Linux Kernel Repository - el7
+baseurl=http://elrepo.org/linux/kernel/el7/$basearch/
+mirrorlist=http://mirrors.elrepo.org/mirrors-elrepo-kernel.el7
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-elrepo.org
+protect=0
+
+[elrepo-extras]
+name=ELRepo.org Community Enterprise Linux Extras Repository - el7
+baseurl=http://elrepo.org/linux/extras/el7/$basearch/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-elrepo.org
+protect=0

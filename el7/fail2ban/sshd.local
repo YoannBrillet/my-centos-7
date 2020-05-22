@@ -1,0 +1,8 @@
+# /etc/fail2ban/jail.d/sshd.local
+
+[DEFAULT]
+bantime = 86400
+ignoreip = 78.197.22.147 163.172.63.88
+
+[sshd]
+enabled = true

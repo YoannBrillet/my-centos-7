@@ -1,0 +1,18 @@
+; /var/named/zone.slackbox.fr
+$TTL 86400
+$ORIGIN slackbox.fr.
+@ IN SOA ns.slackbox.fr. hostmaster.slackbox.fr. (
+   2020031101   ; sn
+        10800   ; refresh (3 hours)
+          600   ; retry (10 minutes)
+      1814400   ; expiry (3 weeks)
+        10800 ) ; minimum (3 hours)
+        IN          NS      ns.slackbox.fr.
+        IN          NS      nssec.online.net.
+        IN          MX      10 mail.slackbox.fr.
+slackbox.fr.        A       163.172.220.174
+ns      IN          A       163.172.220.174
+mail    IN          A       163.172.220.174
+www     CNAME               slackbox.fr.
+blog    CNAME               slackbox.fr.
+cloud   CNAME               slackbox.fr.

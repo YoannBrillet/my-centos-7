@@ -1,0 +1,14 @@
+// /etc/named.conf.local
+
+zone "slackbox.fr" {
+  type master;
+  allow-transfer { 62.210.16.8; };
+  file "zone.slackbox.fr";
+};
+
+zone "unixbox.fr" {
+  type master;
+  allow-transfer { 62.210.16.8; };
+  file "zone.unixbox.fr";
+};
+

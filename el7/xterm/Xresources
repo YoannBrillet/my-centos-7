@@ -1,0 +1,5 @@
+XTerm*background: #000000
+XTerm*foreground: LightGrey
+XTerm*font: 9x15
+XTerm*VT100.geometry: 105x35
+

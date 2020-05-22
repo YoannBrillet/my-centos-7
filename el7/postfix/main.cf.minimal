@@ -1,0 +1,48 @@
+# /etc/postfix/main.cf
+#
+# Configuration Postfix minimale pour un serveur dédié
+
+# Désactiver l'IPv6
+inet_protocols = ipv4
+
+# Envoi seul
+mailbox_size_limit = 0
+inet_interfaces = localhost
+
+# Identification
+smtpd_banner = $myhostname ESMTP $mail_name (CentOS)
+
+# Nom d'hôte du serveur
+myhostname = sd-100246.dedibox.fr
+
+# Domaine du serveur
+mydomain = dedibox.fr
+
+# Domaine pour qualifier les adresses sans la partie domaine
+myorigin = $myhostname
+
+# Envoi de mails sans authentification
+mynetworks = 127.0.0.0/8
+
+# Envoi direct sans relais
+relayhost =
+
+# Tables de correspondance
+alias_maps = hash:/etc/aliases
+alias_database = hash:/etc/aliases
+
+# Commandes de débogage
+debugger_command =
+  PATH=/bin:/usr/bin:/usr/local/bin:/usr/X11R6/bin
+  ddd $daemon_directory/$process_name $process_id & sleep 5
+
+# Chemins des commandes
+sendmail_path = /usr/sbin/sendmail.postfix
+newaliases_path = /usr/bin/newaliases.postfix
+mailq_path = /usr/bin/mailq.postfix
+
+# Documentation
+manpage_directory = /usr/share/man
+sample_directory = /usr/share/doc/postfix-2.10.1/samples
+readme_directory = /usr/share/doc/postfix-2.10.1/README_FILES
+

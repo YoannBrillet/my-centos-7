@@ -1,0 +1,3 @@
+# ~/.xinitrc
+/usr/bin/xrdb -merge $HOME/.Xresources
+/usr/bin/wmaker 
