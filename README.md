@@ -1,35 +1,29 @@
-# Post-installation setup script for CentOS 7 servers 
-# Script de configuration post-installation pour serveur CentOS 7.i
+# Script de configuration post-installation pour serveur CentOS 7
 
 (c) Niki Kovacs, 2020
 (Traduciton par : Couruss, yoann.brillet@ynov.com)
 
-
-This repository provides an "automagic" post-installation setup script for
-servers running CentOS 7 as well as a collection of helper scripts and
-configuration file templates for common services.
-
 Ce depot fournis un script "automagique" de configuration post-installation pour les serveurs sopus Centos 7 ainsi qu'une collection de script d'aide et de fichiers de configuration par defaut pour des services communs. 
 
-## In a nutshell
+## En bref
 
-Perform the following steps.
+Suivez ces etapes :
 
-  1. Install a minimal CentOS 7 system.
+  1. Installez un systeme CentOS 7 minimal.
 
-  2. Create a non-`root` user with administrator privileges.
+  2. Creer un utilisateur avec des droits administrateur qui ne soit pas `root`.
 
-  3. Install Git: `sudo yum install git`
+  3. Installez Git : `sudo yum install git` 
 
-  4. Grab the script: `git clone https://gitlab.com/kikinovak/centos-7.git`
+  4. Clonez ce depot : `git clone https://gitlab.com/kikinovak/centos-7.git`
 
-  5. Change into the new directory: `cd centos-7`
+  5. Entrez dans le dossier: `cd centos-7`
 
-  6. Run the script: `sudo ./centos-setup.sh --setup`
+  6. Lancez le script : `sudo ./centos-setup.sh --setup`
 
-  7. Grab a cup of coffee while the script does all the work.
+  7. Prenez un cafe pendant que le script fait tout le travail.
 
-  8. Reboot.
+  8. Redemarrez.
 
 
 ## Customizing a CentOS server
