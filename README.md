@@ -26,11 +26,13 @@ Suivez ces etapes :
   8. Redemarrez.
 
 
-## Customizing a CentOS server
+## Personnaliser un serveur CentOS 7
 
 Turning a minimal CentOS installation into a functional server always boils
 down to a series of more or less time-consuming operations. Your mileage may
 vary of course, but here's what I usually do on a fresh CentOS installation:
+
+Changer un serveur minimal CentOS en un serveur fonctionnel est toujours une suite d'action plus ou moins longue a effectuer. 
 
   * Customize the Bash shell : prompt, aliases, etc.
 
