@@ -1,6 +1,8 @@
 # Post-installation setup script for CentOS 7 servers 
 
 (c) Niki Kovacs, 2020
+(Traduciton par : Couruss, yoann.brillet@ynov.com)
+
 
 This repository provides an "automagic" post-installation setup script for
 servers running CentOS 7 as well as a collection of helper scripts and
