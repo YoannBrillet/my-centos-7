@@ -33,89 +33,89 @@ down to a series of more or less time-consuming operations. Your mileage may
 vary of course, but here's what I usually do on a fresh CentOS installation:
 
 Changer un serveur minimal CentOS en un serveur fonctionnel est toujours une suite d'action plus ou moins longue a effectuer. 
+Il est possible que votre habitudes soit deffernetes mais voici ce que je fait sur une nouvelle installation de CentOS habituellement :
 
-  * Customize the Bash shell : prompt, aliases, etc.
+  * Personalisation du shell Bash : prompt, aliases, etc.
 
-  * Customize the Vim editor.
+  * Personnalisation de Vim.
 
-  * Setup official and third-party repositories.
+  * Ajout de depot de paquets officiels et non officiels.
 
-  * Install a complete set of command line tools.
+  * Installation d'outils utiles.
 
-  * Remove a handful of unneeded packages.
+  * Desinstallation de paquets inutiles.
 
-  * Enable the admin user to access system logs.
+  * Activation de l'acces au logs systeme pour les utilisateurs d'administration.
 
-  * Disable IPv6 and reconfigure some services accordingly.
+  * Desactivation complete d'IPv6 (et reconfigurations des services associés).
   
-  * Configure a persistent password for `sudo`.
+  * Configuration d'un mot de passe persistant pour `sudo`.
 
   * Etc.
 
-The `centos-setup.sh` script performs all of these operations.
+Le script `centos-setup.sh` deroule toute ces actions.
 
-Configure Bash and Vim and set a more readable default console resolution:
+Configuration de Bash et de Vim et configuration d'une resolution de console plus lisible :
 
 ```
 # ./centos-setup.sh --shell
 ```
 
-Setup official and third-party repositories:
+Ajout de depot de paquets officiels et non officiels.<Paste>
 
 ```
 # ./centos-setup.sh --repos
 ```
 
-Install the `Core` and `Base` package groups along with some extra tools:
+Installation des groupes de paquets `Core` et `Base` avec quelques outils supplementaires :
 
 ```
 # ./centos-setup.sh --extra
 ```
 
-Remove a handful of unneeded packages:
+Desinstallation de paquets inutiles :
 
 ```
 # ./centos-setup.sh --prune
 ```
 
-Enable the admin user to access system logs:
+Activation de l'acces au logs systeme pour les utilisateurs d'administration :
 
 ```
 # ./centos-setup.sh --logs
 ```
 
-Disable IPv6 and reconfigure basic services accordingly:
+Desactivation complete d'IPv6 (et reconfigurations des services associés) :
 
 ```
 # ./centos-setup.sh --ipv4
 ```
 
-Configure password persistence for sudo:
+Configuration d'un mot de passe persistant pour `sudo` :
 
 ```
 # ./centos-setup.sh --sudo
 ```
 
-Perform all of the above in one go:
+Fait toutes les actions lister si dessus :
 
 ```
 # ./centos-setup.sh --setup
 ```
 
-Strip packages and revert back to an enhanced base system:
+Supprime les paquets et reviens au systeme de base :
 
 ```
 # ./centos-setup.sh --strip
 ```
 
-Display help message:
+Affiche l'aide :
 
 ```
 # ./centos-setup.sh --help
 ```
 
-If you want to know what exactly goes on under the hood, open a second terminal
-and view the logs:
+Si vous voulez voir ce qu'il ce passe sous le capot, ouvrez un second terminal et regardez les logs :
 
 ```
 $ tail -f /tmp/centos-setup.log
