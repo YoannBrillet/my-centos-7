@@ -3,7 +3,7 @@
 (c) Niki Kovacs, 2020
 (Traduciton par : Couruss, yoann.brillet@ynov.com)
 
-Ce depot fournis un script "automagique" de configuration post-installation pour les serveurs sopus Centos 7 ainsi qu'une collection de script d'aide et de fichiers de configuration par defaut pour des services communs. 
+Ce depot fournis un script "automagique" de configuration post-installation pour les serveurs sous Centos 7 ainsi qu'une collection de script d'aide et de fichiers de configuration par defaut pour des services communs. 
 
 ## En bref
 
